@@ -1,0 +1,83 @@
+/* AI Readiness Score Section */
+.ai-readiness-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.ai-readiness-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.ai-readiness-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-readiness-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e293b;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ai-readiness-container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.ai-readiness-benefits {
+    text-align: left;
+    width: 100%;
+    margin: 30px auto;
+    list-style: none;
+    padding: 0;
+}
+
+.ai-readiness-benefits li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+.ai-readiness-benefits li i {
+    color: #10b981;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.ai-readiness-button {
+    display: inline-block;
+    background-color: #10b981;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.ai-readiness-button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

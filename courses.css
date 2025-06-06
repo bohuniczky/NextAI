@@ -1,0 +1,209 @@
+/* Courses Page Styling */
+
+/* Courses Section */
+.courses-section {
+    background-color: var(--light-color);
+    padding: 80px 0;
+}
+
+/* Courses Section Heading */
+/* Používáme standardní styly pro nadpisy ze styles.css */
+
+.advanced-courses {
+    background-color: #f9f9f9;
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Course Card */
+.course-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Header */
+.course-header {
+    margin-bottom: 20px;
+}
+
+.course-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    line-height: 1.3;
+}
+
+/* Course Number Styling */
+.course-number {
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-right: 4px;
+}
+
+/* Jump Links Navigation */
+.jump-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+    gap: 20px;
+}
+
+.jump-links a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.jump-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.course-format {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.course-format span {
+    display: flex;
+    align-items: center;
+}
+
+.course-format i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+/* Course Description */
+.course-description {
+    margin-bottom: 20px;
+}
+
+.course-description p {
+    color: var(--gray-color);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Course Benefits */
+.course-benefits {
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.course-benefits ul {
+    padding-left: 0;
+}
+
+.course-benefits li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: var(--dark-color);
+    line-height: 1.5;
+}
+
+.course-benefits li:last-child {
+    margin-bottom: 0;
+}
+
+.course-benefits li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--success-color);
+}
+
+/* Course Action */
+.course-action {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-content .btn {
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+.cta-content .btn:hover {
+    background-color: var(--light-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-card {
+        padding: 25px;
+    }
+    
+    .course-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}

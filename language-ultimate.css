@@ -1,0 +1,61 @@
+/* 
+ * ULTIMÁTNE RIEŠENIE - Štýly pre jazykový prepínač 
+ * - Maximálna spoľahlivosť na všetkých stránkach
+ * - Konzistentný vzhľad a správanie
+ * - Robustné riešenie pre všetky prehliadače
+ */
+
+/* Základné nastavenie pre plynulé prechody */
+html {
+    visibility: hidden; /* Skryjeme obsah kým nie je JS pripravený */
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    /* Pridáme fallback pre staršie prehliadače */
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+}
+
+/* Štýly pre jazykový prepínač */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #666;
+    padding: 0 5px;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+    position: relative;
+    font-weight: normal;
+    cursor: pointer; /* Jasne indikujeme, že je to klikateľný prvok */
+}
+
+.language-switcher a.active {
+    color: #0066cc;
+    font-weight: bold;
+    pointer-events: none; /* Zabránime kliknutiu na aktívny jazyk */
+}
+
+.language-switcher a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: #0066cc;
+}
+
+.language-switcher span {
+    color: #ddd;
+    padding: 0 2px;
+}
+
+/* Fallback pre prípad, že JS zlyhá */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        transition: none !important;
+    }
+}

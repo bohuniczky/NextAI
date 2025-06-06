@@ -1,0 +1,22 @@
+/* Základní styly pro jazykový přepínač */
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #666;
+    padding: 0 5px;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.language-switcher a.active {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.language-switcher span {
+    color: #ddd;
+    padding: 0 2px;
+}

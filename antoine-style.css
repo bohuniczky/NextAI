@@ -1,0 +1,14 @@
+/* Speciální CSS pro Antoina Saint-Dupré */
+.antoine-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Nastavení pozice tak, aby byla vidět hlava a proporčně odpovídala ostatním */
+    object-position: center 15%;
+    transition: transform 0.5s ease;
+}
+
+/* Zachování dynamického chování při najetí myší stejně jako u ostatních speakerů */
+.speaker-card:hover .antoine-image img {
+    transform: scale(1.05);
+}

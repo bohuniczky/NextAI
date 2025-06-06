@@ -1,0 +1,48 @@
+/* 
+ * Unified Speakers CSS - Alexandra Korman Style
+ * This CSS file overrides all speaker image styles to ensure consistent appearance
+ * based on Alexandra Korman's photo style
+ */
+
+/* Reset all speaker images to match Alexandra's style */
+.speaker-image {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 0;
+    margin-bottom: 15px;
+    display: block;
+    background-color: transparent;
+    border: none !important;
+}
+
+.speaker-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important; /* Match Alexandra's face position */
+    transition: transform 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    max-height: none !important;
+    background-color: transparent !important;
+}
+
+/* Special fixes for Antoine and Sofia images */
+.speaker-image img[src*="antoine-saint-dupre"],
+.speaker-image img[src*="sofia-mei-chen"] {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Hover effect matching Alexandra's photo */
+.speaker-image:hover img {
+    transform: scale(1.05);
+}
