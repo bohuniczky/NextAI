@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktujte nás | NextAI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/enroll.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index-cs.html">
+                        <img src="images/nextai-logo-placeholder.png" alt="NextAI Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index-cs.html">Domů</a></li>
+                        <li><a href="courses-cs.html">Kurzy</a></li>
+                        <li><a href="#">O nás</a></li>
+                        <li><a href="contact-cs.html" class="active">Kontakt</a></li>
+                        <li><a href="contact.html" class="lang-switch">EN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontaktujte nás</h2>
+                <p>Jsme tu, abychom odpověděli na vaše dotazy a poskytli vám pomoc</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-tabs">
+                            <button type="button" class="tab-btn active" data-tab="general">Obecný dotaz</button>
+                            <button type="button" class="tab-btn" data-tab="support">Technická podpora</button>
+                            <button type="button" class="tab-btn" data-tab="sales">Prodej</button>
+                        </div>
+                        
+                        <div class="tab-content" id="general-tab">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Jméno*</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Příjmení*</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mailová adresa*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefonní číslo</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Předmět*</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Zpráva*</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Přihlásit se k odběru novinek</label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Souhlasím se <a href="#">Zásadami ochrany osobních údajů</a>*</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-full">Odeslat zprávu</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-sidebar">
+                    <div class="contact-info">
+                        <h3>Kontaktní informace</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresa</h4>
+                                <p>123 AI Innovation Center<br>Praha, Česká republika</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:info@nextai.com">info@nextai.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-hours">
+                        <h3>Otevírací doba</h3>
+                        <ul>
+                            <li><span>Pondělí - Pátek:</span> 9:00 - 18:00</li>
+                            <li><span>Sobota:</span> 10:00 - 14:00</li>
+                            <li><span>Neděle:</span> Zavřeno</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h3>Spojte se s námi</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Zpráva odeslána!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Děkujeme, že jste kontaktovali NextAI. Obdrželi jsme vaši zprávu a brzy se vám ozveme.</p>
+                <p>Náš tým obvykle odpovídá do 24 hodin během pracovních dnů.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="modalClose" class="btn btn-primary">Zavřít</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigace</h4>
+                        <ul>
+                            <li><a href="index-cs.html">Domů</a></li>
+                            <li><a href="courses-cs.html">Kurzy</a></li>
+                            <li><a href="#">O nás</a></li>
+                            <li><a href="contact-cs.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kurzy</h4>
+                        <ul>
+                            <li><a href="courses-cs.html#popular-courses">Pro začátečníky</a></li>
+                            <li><a href="courses-cs.html#advanced-courses">Pro pokročilé</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@nextai.com">info@nextai.com</a></li>
+                            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextAI. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

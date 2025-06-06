@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení do AI kurzu | NextAI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/enroll.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index-cs.html">
+                        <img src="images/nextai-logo-placeholder.png" alt="NextAI Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index-cs.html">Domů</a></li>
+                        <li><a href="courses-cs.html" class="active">Kurzy</a></li>
+                        <li><a href="#">O nás</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="enroll.html" class="lang-switch">EN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enrollment Form Section -->
+    <section class="enrollment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Přihlášení do AI kurzu</h2>
+                <p>Vyplňte formulář níže a zajistěte si místo</p>
+            </div>
+            
+            <div class="enrollment-container">
+                <div class="enrollment-form">
+                    <div class="enrollment-progress">
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Detaily kurzu</div>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Osobní údaje</div>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Preference</div>
+                        </div>
+                    </div>
+                    <form id="enrollmentForm" action="#" method="POST">
+                        <input type="hidden" id="courseId" name="courseId" value="">
+                        
+                        <!-- Step 1: Course Details -->
+                        <div class="form-step active" id="step1">
+                            <div class="form-group">
+                                <label for="courseName">Vybraný kurz</label>
+                                <input type="text" id="courseName" name="courseName" readonly>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="courseFormat">Preferovaný formát*</label>
+                                <div class="radio-card-group">
+                                    <div class="radio-card">
+                                        <input type="radio" id="format-full" name="courseFormat" value="full-day" required>
+                                        <label for="format-full">
+                                            <i class="fas fa-calendar-day"></i>
+                                            <span>Celodenní workshop</span>
+                                            <small>8 hodin s přestávkou na oběd</small>
+                                        </label>
+                                    </div>
+                                    <div class="radio-card">
+                                        <input type="radio" id="format-half" name="courseFormat" value="half-day" required>
+                                        <label for="format-half">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span>Půldenní workshop</span>
+                                            <small>4 hodiny, dopoledne nebo odpoledne</small>
+                                        </label>
+                                    </div>
+                                    <div class="radio-card">
+                                        <input type="radio" id="format-online" name="courseFormat" value="online" required>
+                                        <label for="format-online">
+                                            <i class="fas fa-laptop"></i>
+                                            <span>Pouze online</span>
+                                            <small>Živá interaktivní lekce</small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredDate">Preferované datum*</label>
+                                <div class="date-picker-wrapper">
+                                    <select id="preferredDate" name="preferredDate" required>
+                                        <option value="">Vyberte datum</option>
+                                        <option value="2025-07-15">15. července 2025</option>
+                                        <option value="2025-07-22">22. července 2025</option>
+                                        <option value="2025-08-05">5. srpna 2025</option>
+                                        <option value="2025-08-19">19. srpna 2025</option>
+                                        <option value="2025-09-10">10. září 2025</option>
+                                    </select>
+                                    <div class="date-info">
+                                        <i class="fas fa-info-circle"></i>
+                                        <span>Další termíny budou brzy k dispozici</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-primary btn-full next-step">Pokračovat k osobním údajům</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Personal Information -->
+                        <div class="form-step" id="step2">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Jméno*</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Příjmení*</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mailová adresa*</label>
+                                <input type="email" id="email" name="email" required>
+                                <small class="form-hint">Na tento e-mail zašleme potvrzení a detaily kurzu</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefonní číslo*</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Společnost (Volitelné)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step">Zpět</button>
+                                <button type="button" class="btn btn-primary next-step">Pokračovat k preferencím</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Preferences -->
+                        <div class="form-step" id="step3">
+                            <div class="form-group">
+                                <label>Úroveň zkušeností</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="level-beginner" name="experienceLevel" value="beginner">
+                                        <label for="level-beginner">Začátečník</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="level-intermediate" name="experienceLevel" value="intermediate">
+                                        <label for="level-intermediate">Středně pokročilý</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="level-advanced" name="experienceLevel" value="advanced">
+                                        <label for="level-advanced">Pokročilý</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Speciální požadavky (Volitelné)</label>
+                                <textarea name="specialRequirements" rows="3" placeholder="Jakékoli dietní omezení, požadavky na přístupnost nebo jiné požadavky..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Přihlásit se k odběru novinek o AI školeních</label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Souhlasím s <a href="#">Obchodními podmínkami</a> a <a href="#">Zásadami ochrany osobních údajů</a>*</label>
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step">Zpět</button>
+                                <button type="submit" class="btn btn-primary btn-full">Dokončit přihlášku</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="enrollment-sidebar">
+                    <div class="course-summary">
+                        <h3>Shrnutí kurzu</h3>
+                        <div id="courseSummary">
+                            <!-- Course details will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="enrollment-benefits">
+                        <h3>Výhody</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Zkušení lektoři s praxí v oboru</li>
+                            <li><i class="fas fa-check-circle"></i> Praktická cvičení</li>
+                            <li><i class="fas fa-check-circle"></i> Materiály a zdroje v ceně kurzu</li>
+                            <li><i class="fas fa-check-circle"></i> Certifikát o absolvování</li>
+                            <li><i class="fas fa-check-circle"></i> 30denní podpora po kurzu</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="enrollment-contact">
+                        <h3>Potřebujete pomoc?</h3>
+                        <p>Kontaktujte náš tým pro pomoc s přihlášením nebo s jakýmikoli dotazy ohledně našich kurzů.</p>
+                        <a href="mailto:info@nextai.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Napište nám</a>
+                        <a href="tel:+1234567890" class="btn btn-secondary"><i class="fas fa-phone"></i> Zavolejte nám</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Přihláška odeslána!</h2>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-details">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="confirmation-info">
+                        <h3>Další kroky</h3>
+                        <ol>
+                            <li>Zkontrolujte svůj e-mail pro potvrzení detailů</li>
+                            <li>Přidejte si datum kurzu do kalendáře</li>
+                            <li>Dokončete případné předkurzové materiály (pokud jsou k dispozici)</li>
+                        </ol>
+                        <p>Náš tým vás bude kontaktovat do 24 hodin pro potvrzení přihlášky a zodpovězení případných dotazů.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="modalClose" class="btn btn-primary">Zavřít</button>
+                <a href="courses-cs.html" class="btn btn-outline">Prohlédnout další kurzy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigace</h4>
+                        <ul>
+                            <li><a href="index-cs.html">Domů</a></li>
+                            <li><a href="courses-cs.html">Kurzy</a></li>
+                            <li><a href="#">O nás</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kurzy</h4>
+                        <ul>
+                            <li><a href="courses-cs.html#popular-courses">Pro začátečníky</a></li>
+                            <li><a href="courses-cs.html#advanced-courses">Pro pokročilé</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@nextai.com">info@nextai.com</a></li>
+                            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextAI. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/enroll.js"></script>
+</body>
+</html>

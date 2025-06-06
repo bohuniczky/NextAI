@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextAI - Simple Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0066cc;
+        }
+        .language-switcher {
+            margin: 20px 0;
+        }
+        .language-switcher a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+        .language-switcher a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NextAI - Simple Test Page</h1>
+        
+        <div class="language-switcher">
+            <a href="simple-index.html" class="active">English</a> | 
+            <a href="simple-index-cs.html">Czech</a>
+        </div>
+        
+        <p>This is a simple test page to verify that deployment is working correctly.</p>
+        
+        <p>If you can see this text, the page is loading properly.</p>
+        
+        <h2>Original Website Links:</h2>
+        <ul>
+            <li><a href="index.html">Homepage (EN)</a></li>
+            <li><a href="index-cs.html">Homepage (CZ)</a></li>
+            <li><a href="courses.html">Courses (EN)</a></li>
+            <li><a href="courses-cs.html">Courses (CZ)</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Simple script to highlight active language
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname;
+            const links = document.querySelectorAll('.language-switcher a');
+            
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (currentPath.endsWith(href)) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

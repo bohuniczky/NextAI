@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextAI - Master AI for Elite Consultants</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Component Stylesheets -->
+    <link rel="stylesheet" href="css/language-switcher.css">
+    <link rel="stylesheet" href="css/feature-cards.css">
+    <link rel="stylesheet" href="css/speakers.css">
+    <link rel="stylesheet" href="css/profile-photos.css">
+    <link rel="stylesheet" href="css/special-guest.css">
+    <link rel="stylesheet" href="css/unified-speakers.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/ai-readiness.css">
+    <link rel="stylesheet" href="css/force-unified-speakers.css">
+    <!-- Externý JavaScript pre jazykový prepínač -->
+    <script src="js/language-handler-fixed.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/enrollment-simple.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" style="padding: 10px 0;">
+                    <a href="#"><img src="images/nextai-logo-white-2.jpg" alt="NextAI Logo" style="height: 80px; display: block; max-width: 100%;"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="courses3.html">Courses</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="language-switcher">
+                    <a href="index.html">EN</a>
+                    <span>|</span>
+                    <a href="index-cs.html">CZ</a>
+                </div>
+                <div class="nav-signin">
+                    <a href="#" class="btn btn-text">Sign In</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="#" class="btn btn-primary enroll-btn">Sign Up</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero/Header Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content full-width">
+                <h1>Step Into the TOP 1%: Master AI for Elite Consultants</h1>
+                <p class="subheadline">NextAI empowers Czech financial advisors and consultants to achieve mastery, transform client results, and lead with confidence through AI-driven learning and tools.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-large enroll-btn">Unlock Elite AI Skills</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-numbers" id="key-numbers">
+        <div class="container">
+            <div class="numbers-grid">
+                <div class="number-card">
+                    <div class="number">8</div>
+                    <p>Practical Modules for Real-World Impact</p>
+                </div>
+                <div class="number-card">
+                    <div class="number">4</div>
+                    <p>Countries Connected to Our Program</p>
+                </div>
+                <div class="number-card">
+                    <div class="number">500+</div>
+                    <p>Advisors from CEE Already Enrolled</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lead-magnet" id="lead-magnet">
+        <div class="container">
+            <div class="lead-magnet-content">
+                <div class="lead-magnet-text">
+                    <h2>Ready to transform your business with AI?</h2>
+                    <p>Start with a free assessment and see how NextAI can help you achieve your goals.</p>
+                    <form class="lead-form">
+                        <div class="toggle-container">
+                            <label class="toggle-label">I am applying as:</label>
+                            <div class="toggle-switch">
+                                <input type="radio" id="company-option" name="assessment-type" value="company" checked>
+                                <label for="company-option">Company</label>
+                                <input type="radio" id="individual-option" name="assessment-type" value="individual">
+                                <label for="individual-option">Individual</label>
+                            </div>
+                        </div>
+                        
+                        <div class="dynamic-fields">
+                            <!-- Company fields (shown by default) -->
+                            <div class="company-fields">
+                                <input type="text" placeholder="Business Name" required>
+                                <select required>
+                                    <option value="" disabled selected>Select Your Industry</option>
+                                    <option value="financial">Financial Services</option>
+                                    <option value="insurance">Insurance</option>
+                                    <option value="banking">Banking</option>
+                                    <option value="wealth">Wealth Management</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <select required>
+                                    <option value="" disabled selected>Top Business Challenge</option>
+                                    <option value="time">Time Management</option>
+                                    <option value="clients">Client Acquisition</option>
+                                    <option value="retention">Client Retention</option>
+                                    <option value="tech">Technology Integration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Individual fields (hidden by default) -->
+                            <div class="individual-fields" style="display:none;">
+                                <input type="text" placeholder="Your Name" required>
+                                <select required>
+                                    <option value="" disabled selected>Your Current Role</option>
+                                    <option value="financial-advisor">Financial Advisor</option>
+                                    <option value="consultant">Business Consultant</option>
+                                    <option value="wealth-manager">Wealth Manager</option>
+                                    <option value="independent">Independent Advisor</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <select required>
+                                    <option value="" disabled selected>Your Primary Goal</option>
+                                    <option value="client-acquisition">Attract More Clients</option>
+                                    <option value="efficiency">Improve Efficiency</option>
+                                    <option value="expertise">Enhance AI Expertise</option>
+                                    <option value="income">Increase Income</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Common fields for both options -->
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary assessment-button">Get Free Assessment</button>
+                    </form>
+                </div>
+                <div class="lead-magnet-image">
+                    <div class="assessment-preview">
+                        <h3 class="assessment-title">Business Assessment</h3>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <p class="analysis-text">Analyzing your data...</p>
+                        
+                        <!-- Company results (shown by default) -->
+                        <div class="assessment-results company-results">
+                            <div class="result-item">
+                                <span class="result-label">Growth Potential</span>
+                                <span class="result-value high">High</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Operational Efficiency</span>
+                                <span class="result-value medium">Medium</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Marketing Effectiveness</span>
+                                <span class="result-value low">Low</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Individual results (hidden by default) -->
+                        <div class="assessment-results individual-results" style="display:none;">
+                            <div class="result-item">
+                                <span class="result-label">AI Readiness</span>
+                                <span class="result-value medium">Medium</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Career Growth Potential</span>
+                                <span class="result-value high">High</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Client Value Enhancement</span>
+                                <span class="result-value medium">Medium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Top Advisors Choose NextAI</h2>
+                <p>Join the elite consultants who are leveraging AI to transform their practice</p>
+            </div>
+            <div class="benefits-wrapper">
+                <div class="benefits-row">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Accelerate Growth</h3>
+                            <p>Accelerate your growth with AI-powered education tailored for consultants</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Stand Out</h3>
+                            <p>Stand out with advanced certifications that set you apart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-row">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Build Trust</h3>
+                            <p>Strengthen client trust and deliver measurable results with new AI tools</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Exclusive Resources</h3>
+                            <p>Access exclusive resources designed for ambitious professionals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="local-focus" id="local-focus">
+        <div class="container">
+            <div class="section-header">
+                <h2>Local Focus</h2>
+                <p>Designed specifically for the Czech market</p>
+            </div>
+            <div class="local-focus-wrapper">
+                <div class="local-focus-content">
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Czech Market Expertise</h3>
+                            <p>Built for the Czech consulting and finance landscape</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Tailored Content</h3>
+                            <p>Course content, certifications, and tools aligned with Czech market needs</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Compliant & Secure</h3>
+                            <p>GDPR compliant, respects Czech data privacy and financial regulations</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Bilingual Support</h3>
+                            <p>All materials in Czech and English</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Local Support</h3>
+                            <p>Support team based in Prague</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Platform Features</h2>
+                <p>Your Tools for Top Performance</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Smart Dashboard</h3>
+                    <p>See all your progress, certifications, and learning in one place</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Client Support Boosters</h3>
+                    <p>Use AI prompts and templates to deliver better, faster answers</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>AI Learning Paths</h3>
+                    <p>Tailored journeys for every consultant, from beginner to expert</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification Tracking</h3>
+                    <p>Easily manage your professional development and share your achievements with clients</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>VIP Resource Library</h3>
+                    <p>Access exclusive guides, case studies, and AI templates for Czech professionals</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Programs Section -->
+    <section class="certification" id="certification">
+        <div class="container">
+            <div class="section-header">
+                <h2>Three-Tier Certification: Path to Mastery</h2>
+                <p>Your journey to becoming an elite AI consultant</p>
+            </div>
+            <div class="certification-path">
+                <div class="certification-cards">
+                    <div class="certification-card" data-level="1">
+                        <div class="certification-card-header">
+                            <div class="level-badge">Level 1</div>
+                            <div class="certification-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="certification-card-body">
+                            <h3>Certified AI-Ready Consultant</h3>
+                            <p>Build a solid foundation. Apply AI in your daily work.</p>
+                            <ul class="certification-benefits">
+                                <li><i class="fas fa-check-circle"></i> AI fundamentals mastery</li>
+                                <li><i class="fas fa-check-circle"></i> Basic prompt engineering</li>
+                                <li><i class="fas fa-check-circle"></i> Client communication tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card" data-level="2">
+                        <div class="certification-card-header">
+                            <div class="level-badge">Level 2</div>
+                            <div class="certification-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="certification-card-body">
+                            <h3>Advanced AI Advisor</h3>
+                            <p>Deliver higher value to clients. Lead with data-driven insight.</p>
+                            <ul class="certification-benefits">
+                                <li><i class="fas fa-check-circle"></i> Advanced AI implementation</li>
+                                <li><i class="fas fa-check-circle"></i> Custom workflow creation</li>
+                                <li><i class="fas fa-check-circle"></i> Client results acceleration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card" data-level="3">
+                        <div class="certification-card-header">
+                            <div class="level-badge">Level 3</div>
+                            <div class="certification-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                        </div>
+                        <div class="certification-card-body">
+                            <h3>Elite AI Strategist</h3>
+                            <p>Shape strategies for top firms. Stand out as a recognized expert.</p>
+                            <ul class="certification-benefits">
+                                <li><i class="fas fa-check-circle"></i> Strategic AI implementation</li>
+                                <li><i class="fas fa-check-circle"></i> Industry thought leadership</li>
+                                <li><i class="fas fa-check-circle"></i> Top-tier consulting skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certification-cta">
+                    <div class="premium-guide-wrapper">
+                        <div class="guide-content">
+                            <div class="guide-header">
+                                <div class="guide-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h3>Get your free guide: <span class="highlight">"AI for Top 1% Advisors"</span></h3>
+                            </div>
+                            <p class="guide-description">Join our next live workshop and experience transformation first-hand. Unlock elite strategies used by the most successful consultants in the Czech market.</p>
+                            <ul class="guide-benefits">
+                                <li><i class="fas fa-check-circle"></i> <strong>Exclusive AI prompts</strong> for financial advisors</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Client communication</strong> templates</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Time-saving</strong> workflows for consultants</li>
+                            </ul>
+                            
+                            <div class="badges-showcase">
+                                <h4>Unlock All Certification Levels</h4>
+                                <div class="badges-row">
+                                    <div class="badge-card">
+                                        <div class="badge-icon starter-badge">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                        <p>Starter</p>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon pro-badge">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <p>Pro</p>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon leader-badge">
+                                            <i class="fas fa-crown"></i>
+                                        </div>
+                                        <p>Leader</p>
+                                    </div>
+                                </div>
+                                <p class="badge-journey">Start your journey to becoming an Elite AI Strategist today</p>
+                            </div>
+                            
+                            <div class="cta-button-container">
+                                <a href="#cta" class="btn btn-primary btn-large glow-animation">Get Free Prompts Tailored For Your Success</a>
+                                <div class="social-proof">
+                                    <div class="downloads-count"><i class="fas fa-download"></i> 500+ downloads</div>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(4.9/5)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-readiness-section" id="ai-readiness">
+        <div class="ai-readiness-container">
+            <div class="ai-readiness-content">
+                <h2>Discover Your AI Readiness Score</h2>
+                <p>Take our 2-minute assessment to see how prepared your advisory practice is for AI integration.</p>
+                
+                <ul class="ai-readiness-benefits">
+                    <li><i class="fas fa-check-circle"></i> Personalized AI readiness report</li>
+                    <li><i class="fas fa-check-circle"></i> Custom implementation roadmap</li>
+                    <li><i class="fas fa-check-circle"></i> Priority access to limited workshop seats</li>
+                </ul>
+                
+                <a href="#assessment" class="ai-readiness-button">Start Your Assessment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet the main speakers for the course</h2>
+                <p>Learn from industry experts who have mastered AI implementation in financial advisory</p>
+            </div>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/alexandra-korman.jpg" alt="Alexandra Korman - AI Strategy and Business Innovation Leader" onerror="this.src='images/alexandra-korman-linkedin.jpg'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Alexandra Korman</h3>
+                        <p class="speaker-title">AI Strategist and Business Innovation Leader</p>
+                        <p class="speaker-bio">Business executive leader with global experience. Supports business growth through AI, innovative strategy, and customer-oriented solutions.</p>
+                        <a href="https://www.linkedin.com/in/alexandrakorman/" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/ladislav-bohuniczky.jpg" alt="Ladislav Bohuniczky - AI Transformation Consultant" onerror="this.src='images/ladislav-bohuniczky-linkedin.jpg'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Ladislav Bohuniczky</h3>
+                        <p class="speaker-title">AI Transformation Consultant</p>
+                        <p class="speaker-bio">Drives companies growth with AI and innovation. Equips advisors to modernize, transform practices, and improve results with stronger data insights.</p>
+                        <a href="https://www.linkedin.com/in/ladislav-bohuniczky/" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/antoine-saint-dupre.jpg" alt="Antoine Saint-Dupré - AI & Blockchain Integration Senior Expert" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Antoine Saint-Dupré</h3>
+                        <p class="speaker-title">AI & Blockchain Integration Senior Expert</p>
+                        <p class="speaker-bio">Bridges AI and blockchain to create secure, intelligent systems. Guides digital innovation in finance through decentralized models and machine learning.</p>
+                        <a href="#" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/sofia-mei-chen.png" alt="Sofia Mei Chen - Marketing & Community Growth Strategist" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Sofia Mei Chen</h3>
+                        <p class="speaker-title">Marketing & Community Growth Strategist</p>
+                        <p class="speaker-bio">Creative marketer who bridges East and West, traditional and digital. Builds engaged communities through social media, video, and digital storytelling.</p>
+                        <a href="#" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/special-guest.jpg" alt="Special Guest" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Special Guest</h3>
+                        <span class="coming-soon">To be announced</span>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/special-guest1.jpg" alt="Special Guest" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Special Guest</h3>
+                        <span class="coming-soon">To be announced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Investment in Future Excellence</h2>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Online Course</h3>
+                        <div class="price">690 Kč</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Full access to all course materials</li>
+                            <li>Practice exercises and templates</li>
+                            <li>Certificate of completion</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>1-Day Workshop</h3>
+                        <div class="price">1 250 Kč <span>per person</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Tailored to your industry</li>
+                            <li>Intensive hands-on training</li>
+                            <li>Practical use cases</li>
+                            <li>Workshop materials and resources</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary enroll-btn" data-course-name="1-Day Workshop">Request Workshop</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Custom Corporate Plans</h3>
+                        <div class="price">Contact us</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Tailored to your company needs</li>
+                            <li>On-site or remote options</li>
+                            <li>Team-based exercises</li>
+                            <li>Progress tracking for managers</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary enroll-btn" data-course-name="Custom Corporate Plan">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-bonus">
+                <h3>Optional Benefits</h3>
+                <ul>
+                    <li>Free 14-day access to the VIP Resource Library</li>
+                    <li>Bundle discounts for course and workshop</li>
+                    <li>VIP access: First to receive new AI templates and expert webinars</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Czech Advisors Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"NextAI helped me land bigger clients by showing I'm ahead of the curve."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Tomáš, Financial Consultant, Brno</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"With NextAI's certification, my clients trust my AI expertise and see real results."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Jana, Independent Advisor, Praha</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I joined for the tools, but stayed for the community. It's the best investment in my career."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Pavel, Wealth Manager, Ostrava</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Workshops gave me clarity and confidence to lead with AI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Barbora, Consulting Partner, Plzeň</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"My professional network now sees me as an AI leader."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Radek, Business Coach, Olomouc</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Workshops gave me clarity and confidence to lead with AI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Barbora, Consulting Partner, Plzeň</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots"></div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:support@nextai.cz">support@nextai.cz</a></li>
+                        <li><i class="fas fa-phone"></i> Phone: <a href="tel:+420123456789">+420 123 456 789</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="assessment-modal" id="assessment">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Request Free Company AI Assessment</h2>
+            <form id="assessmentForm">
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactName">Contact Name</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamSize">Team Size</label>
+                    <select id="teamSize" name="teamSize" required>
+                        <option value="">Select team size</option>
+                        <option value="1-5">1-5 advisors</option>
+                        <option value="6-15">6-15 advisors</option>
+                        <option value="16-30">16-30 advisors</option>
+                        <option value="31+">31+ advisors</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Areas of Interest</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="client-communication"> Client Communication</label>
+                        <label><input type="checkbox" name="interests" value="time-management"> Time Management</label>
+                        <label><input type="checkbox" name="interests" value="product-education"> Product Education</label>
+                        <label><input type="checkbox" name="interests" value="prospecting"> Prospecting</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Request Assessment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/nextai-logo-white-placeholder.png" alt="NextAI Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:info@nextai.cz">info@nextai.cz</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">GDPR/Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-form-footer">
+                        <h4>Contact us</h4>
+                        <form id="footerContactForm">
+                            <input type="email" placeholder="Your email" required>
+                            <textarea placeholder="Your message" required></textarea>
+                            <button type="submit" class="btn btn-secondary">Send</button>
+                        </form>
+                    </div>
+                    <div class="live-chat">
+                        <a href="#" class="chat-button"><i class="fas fa-comment"></i> Live Chat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextAI. All rights reserved.</p>
+                <p class="analytics-note">Google Analytics enabled</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <!-- Script enrollment-popup.js je již načten v hlavičce -->
+</body>
+</html>

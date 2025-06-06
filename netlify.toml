@@ -1,0 +1,36 @@
+[build]
+  publish = "."
+  command = "echo 'No build command'"
+
+# Nastavení cache kontroly pro HTML soubory
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Pragma = "no-cache"
+    Expires = "0"
+
+[[redirects]]
+  from = "/courses"
+  to = "/courses.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/courses-cs"
+  to = "/courses-cs.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"

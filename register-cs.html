@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vytvořit účet | NextAI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index-cs.html">
+                        <img src="images/nextai-logo-placeholder.png" alt="NextAI Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index-cs.html">Domů</a></li>
+                        <li><a href="courses-cs.html">Kurzy</a></li>
+                        <li><a href="#">O nás</a></li>
+                        <li><a href="contact-cs.html">Kontakt</a></li>
+                        <li><a href="register.html" class="lang-switch">EN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="register-section">
+        <div class="container">
+            <div class="register-container">
+                <div class="register-form-container">
+                    <h1>Vytvořit účet</h1>
+                    <form id="registerForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Jméno</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Heslo</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-full">Registrovat se</button>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <p>Již máte účet? <a href="login-cs.html">Přihlásit se</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="register-benefits">
+                    <h3>Výhody vytvoření účtu</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Snadné přihlášení na kurzy</li>
+                        <li><i class="fas fa-check-circle"></i> Sledování vašeho pokroku</li>
+                        <li><i class="fas fa-check-circle"></i> Přístup k exkluzivním materiálům</li>
+                        <li><i class="fas fa-check-circle"></i> Personalizovaná doporučení</li>
+                        <li><i class="fas fa-check-circle"></i> Upozornění na nové kurzy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Účet vytvořen!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Váš účet byl úspěšně vytvořen. Nyní se můžete přihlásit a začít prozkoumávat naše kurzy.</p>
+                <p>Poslali jsme potvrzovací e-mail na vaši adresu. Prosím, ověřte svůj e-mail pro odemknutí všech funkcí.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="login-cs.html" class="btn btn-primary">Přihlásit se</a>
+                <a href="courses-cs.html" class="btn btn-outline">Prohlédnout kurzy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigace</h4>
+                        <ul>
+                            <li><a href="index-cs.html">Domů</a></li>
+                            <li><a href="courses-cs.html">Kurzy</a></li>
+                            <li><a href="#">O nás</a></li>
+                            <li><a href="contact-cs.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kurzy</h4>
+                        <ul>
+                            <li><a href="courses-cs.html#popular-courses">Pro začátečníky</a></li>
+                            <li><a href="courses-cs.html#advanced-courses">Pro pokročilé</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@nextai.com">info@nextai.com</a></li>
+                            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextAI. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

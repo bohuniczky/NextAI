@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="cs" data-language="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextAI - AI nástroje pro finanční poradce</title>
+    <meta name="description" content="NextAI posilní české finanční poradce a konzultanty k dosažení mistrovství, transformaci výsledků klientů a vedení s jistotou prostřednictvím učení a nástrojů založených na AI.">
+    <meta name="keywords" content="AI pro špičkové konzultanty, školení elitních poradců Česká republika, obchodní AI nástroje pro profesionály">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feature-cards.css">
+    <link rel="stylesheet" href="css/speakers.css">
+    <link rel="stylesheet" href="css/ai-readiness.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Component Stylesheets -->
+    <link rel="stylesheet" href="css/language-switcher.css">
+    <link rel="stylesheet" href="css/profile-photos.css">
+    <link rel="stylesheet" href="css/special-guest.css">
+    <link rel="stylesheet" href="css/unified-speakers.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/force-unified-speakers.css">
+    
+    <!-- Externý JavaScript pre jazykový prepínač -->
+    <script src="js/language-handler-fixed.js"></script>
+    <script src="js/enrollment-simple.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" style="padding: 10px 0;">
+                    <a href="#"><img src="images/nextai-logo-white-2.jpg" alt="NextAI Logo" style="height: 80px; display: block; max-width: 100%;"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#features">Funkce</a></li>
+                        <li><a href="#speakers">Řečníci</a></li>
+                        <li><a href="courses3-cs.html">Kurzy</a></li>
+                        <li><a href="#pricing">Ceny</a></li>
+                        <li><a href="#testimonials">Reference</a></li>
+                    </ul>
+                </div>
+                <div class="language-switcher">
+                    <a href="index.html">EN</a>
+                    <span>|</span>
+                    <a href="index-cs.html">CZ</a>
+                </div>
+                <div class="nav-signin">
+                    <a href="#" class="btn btn-text">Přihlásit</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="#" class="btn btn-primary enroll-btn">Registrovat</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content full-width">
+                <h1>Přidej se k TOP 1%: Ovládni AI pro elitní poradce</h1>
+                <p class="subheadline">NextAI pomáhá českým finančním poradcům a konzultantům ovládnout AI, transformovat výsledky klientů a vést s jistotou díky specializovanému vzdělávání a nástrojům.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-large enroll-btn">Odemkni elitní AI dovednosti</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-numbers" id="key-numbers">
+        <div class="container">
+            <div class="numbers-grid">
+                <div class="number-card">
+                    <div class="number">8</div>
+                    <p>Praktických modulů s reálným dopadem</p>
+                </div>
+                <div class="number-card">
+                    <div class="number">4</div>
+                    <p>Zemí zapojených do našeho programu</p>
+                </div>
+                <div class="number-card">
+                    <div class="number">500+</div>
+                    <p>Poradců ze střední a východní Evropy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lead-magnet" id="lead-magnet">
+        <div class="container">
+            <div class="lead-magnet-content">
+                <div class="lead-magnet-text">
+                    <h2>Jste připraveni transformovat svůj byznys s AI?</h2>
+                    <p>Začněte s bezplatným hodnocením a zjistěte, jak vám NextAI může pomoci dosáhnout vašich cílů.</p>
+                    <form class="lead-form">
+                        <div class="toggle-container">
+                            <label class="toggle-label">Přihlašuji se jako:</label>
+                            <div class="toggle-switch">
+                                <input type="radio" id="company-option" name="assessment-type" value="company" checked>
+                                <label for="company-option">Společnost</label>
+                                <input type="radio" id="individual-option" name="assessment-type" value="individual">
+                                <label for="individual-option">Jednotlivec</label>
+                            </div>
+                        </div>
+                        
+                        <div class="dynamic-fields">
+                            <!-- Firemní pole (zobrazena ve výchozím nastavení) -->
+                            <div class="company-fields">
+                                <input type="text" placeholder="Název společnosti" required>
+                                <select required>
+                                    <option value="">Velikost týmu</option>
+                                    <option value="1-5">1-5 poradců</option>
+                                    <option value="6-15">6-15 poradců</option>
+                                    <option value="16-30">16-30 poradců</option>
+                                    <option value="31+">31+ poradců</option>
+                                </select>
+                                <select required>
+                                    <option value="">Hlavní cíl</option>
+                                    <option value="efficiency">Zvýšit efektivitu</option>
+                                    <option value="growth">Podpořit růst</option>
+                                    <option value="retention">Zlepšit udržení klientů</option>
+                                    <option value="tech">Integrace technologií</option>
+                                    <option value="other">Jiné</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Individuální pole (skrytá ve výchozím nastavení) -->
+                            <div class="individual-fields" style="display:none;">
+                                <input type="text" placeholder="Vaše jméno" required>
+                                <select required>
+                                    <option value="">Roky zkušeností</option>
+                                    <option value="0-2">0-2 roky</option>
+                                    <option value="3-5">3-5 let</option>
+                                    <option value="6-10">6-10 let</option>
+                                    <option value="10+">10+ let</option>
+                                </select>
+                                <select required>
+                                    <option value="">Hlavní cíl</option>
+                                    <option value="skills">Zlepšit dovednosti</option>
+                                    <option value="clients">Získat více klientů</option>
+                                    <option value="time">Zlepšit time management</option>
+                                    <option value="income">Zvýšit příjem</option>
+                                    <option value="other">Jiné</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Společná pole pro obě možnosti -->
+                        <input type="email" placeholder="E-mailová adresa" required>
+                        <button type="submit" class="btn btn-primary assessment-button">Získat bezplatné hodnocení</button>
+                    </form>
+                </div>
+                <div class="lead-magnet-image">
+                    <div class="assessment-preview">
+                        <h3 class="assessment-title">Hodnocení podnikání</h3>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="assessment-results">
+                            <!-- Firemní výsledky (zobrazeny ve výchozím nastavení) -->
+                            <div class="company-results">
+                                <div class="result-item">
+                                    <span class="result-label">Připravenost na AI:</span>
+                                    <span class="result-value medium">Střední</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Potenciál růstu:</span>
+                                    <span class="result-value high">Vysoký</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Konkurenční výhoda:</span>
+                                    <span class="result-value medium">Střední</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Efektivita procesů:</span>
+                                    <span class="result-value low">Nízká</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Individuální výsledky (skryté ve výchozím nastavení) -->
+                            <div class="individual-results" style="display:none;">
+                                <div class="result-item">
+                                    <span class="result-label">AI Dovednosti:</span>
+                                    <span class="result-value low">Začátečník</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Potenciál výdělku:</span>
+                                    <span class="result-value high">Vysoký</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Efektivita práce:</span>
+                                    <span class="result-value medium">Střední</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Konkurenční výhoda:</span>
+                                    <span class="result-value medium">Střední</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proč špičkoví poradci volí NextAI</h2>
+                <p>Připojte se k elitním konzultantům, kteří využívají AI k transformaci své praxe</p>
+            </div>
+            <div class="benefits-wrapper">
+                <div class="benefits-row">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Urychlete růst</h3>
+                            <p>Urychlete svůj růst pomocí vzdělávání s podporou AI přizpůsobeného pro konzultanty</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Vynikněte</h3>
+                            <p>Vynikněte díky pokročilým certifikacím, které vás odliší od ostatních</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-row">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Budujte důvěru</h3>
+                            <p>Posilte důvěru klientů a dodávejte měřitelné výsledky s novými nástroji AI</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Exkluzivní zdroje</h3>
+                            <p>Přístup k exkluzivním zdrojům navrženým pro ambiciózní profesionály</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="local-focus" id="local-focus">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lokální zaměření</h2>
+                <p>Navrženo speciálně pro český trh</p>
+            </div>
+            <div class="local-focus-wrapper">
+                <div class="local-focus-content">
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Odbornost na českém trhu</h3>
+                            <p>Vytvořeno pro české poradenství a finanční prostředí</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Přizpůsobený obsah</h3>
+                            <p>Obsah kurzu, certifikace a nástroje sladěné s potřebami českého trhu</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Soulad s GDPR</h3>
+                            <p>V souladu s GDPR, respektuje české předpisy o ochraně údajů a finanční regulace</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Dvojjazyčná podpora</h3>
+                            <p>Všechny materiály v češtině a angličtině</p>
+                        </div>
+                    </div>
+                    <div class="local-focus-item">
+                        <div class="local-focus-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="local-focus-text">
+                            <h3>Místní podpora</h3>
+                            <p>Tým podpory sídlí v Praze</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Funkce platformy</h2>
+                <p>Vaše nástroje pro špičkový výkon</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Chytrý dashboard</h3>
+                    <p>Sledujte své učení, pokrok a certifikace na jednom místě.</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Nástroje pro podporu klientů</h3>
+                    <p>Používejte AI k rychlejším odpovědím, personalizaci e-mailů a uzavírání více obchodů.</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>AI vzdělávací cesty</h3>
+                    <p>Vyberte si začátečnické nebo pokročilé trasy. Získejte okamžitý přístup k příkladům z praxe a nástrojům.</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Sledování certifikací</h3>
+                    <p>Sledujte svůj stav v našem 3-stupňovém programu. Používejte certifikáty ve svém CV a s klienty.</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>VIP knihovna zdrojů</h3>
+                    <p>Přístup k exkluzivním příručkám, případovým studiím a AI šablonám pro české profesionály</p>
+                    <!-- Obrázek odstraněn na žádost uživatele -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce certifikačních programů -->
+    <section class="certification" id="certification">
+        <div class="container">
+            <div class="section-header">
+                <h2>Třístupňová certifikace: Cesta k mistrovství</h2>
+                <p>Vaše cesta k tomu, abyste se stali elitním AI konzultantem</p>
+            </div>
+            <div class="certification-path">
+                <div class="certification-cards">
+                    <div class="certification-card" data-level="1">
+                        <div class="certification-card-header">
+                            <div class="level-badge">Úroveň 1</div>
+                            <div class="certification-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="certification-card-body">
+                            <h3>Certifikovaný konzultant připravený na AI</h3>
+                            <p>Vybudujte pevný základ. Aplikujte AI ve své každodenní práci.</p>
+                            <ul class="certification-benefits">
+                                <li><i class="fas fa-check-circle"></i> Zvládnutí základů AI</li>
+                                <li><i class="fas fa-check-circle"></i> Základní prompt engineering</li>
+                                <li><i class="fas fa-check-circle"></i> Nástroje pro komunikaci s klienty</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card" data-level="2">
+                        <div class="certification-card-header">
+                            <div class="level-badge">Úroveň 2</div>
+                            <div class="certification-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="certification-card-body">
+                            <h3>Pokročilý AI poradce</h3>
+                            <p>Poskytujte klientům vyšší hodnotu. Veďte s vhledem založeným na datech.</p>
+                            <ul class="certification-benefits">
+                                <li><i class="fas fa-check-circle"></i> Pokročilá implementace AI</li>
+                                <li><i class="fas fa-check-circle"></i> Vytváření vlastních pracovních postupů</li>
+                                <li><i class="fas fa-check-circle"></i> Urychlení výsledků klientů</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card" data-level="3">
+                        <div class="certification-card-header">
+                            <div class="level-badge">Úroveň 3</div>
+                            <div class="certification-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                        </div>
+                        <div class="certification-card-body">
+                            <h3>Elitní AI strateg</h3>
+                            <p>Staňte se lídrem v oboru. Transformujte svou praxi a odvětví.</p>
+                            <ul class="certification-benefits">
+                                <li><i class="fas fa-check-circle"></i> Strategické využití AI</li>
+                                <li><i class="fas fa-check-circle"></i> Pokročilé analytické nástroje</li>
+                                <li><i class="fas fa-check-circle"></i> Vedení transformačních projektů</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certification-cta">
+                    <div class="premium-guide-wrapper">
+                        <div class="guide-content">
+                            <div class="guide-header">
+                                <div class="guide-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h3>Získejte bezplatného průvodce: <span class="highlight">"AI pro TOP 1% poradců"</span></h3>
+                            </div>
+                            <p class="guide-description">Připojte se k našemu dalšímu živému workshopu a zažijte transformaci na vlastní kůži. Odemkněte elitní strategie používané nejúspěšnějšími konzultanty na českém trhu.</p>
+                            <ul class="guide-benefits">
+                                <li><i class="fas fa-check-circle"></i> <strong>Exkluzivní AI prompty</strong> pro finanční poradce</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Šablony pro komunikaci</strong> s klienty</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Úspora času</strong> díky workflow pro konzultanty</li>
+                            </ul>
+                            
+                            <div class="badges-showcase">
+                                <h4>Odemkněte všechny certifikační úrovně</h4>
+                                <div class="badges-row">
+                                    <div class="badge-card">
+                                        <div class="badge-icon starter-badge">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                        <p>Začátečník</p>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon pro-badge">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <p>Profesionál</p>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon leader-badge">
+                                            <i class="fas fa-crown"></i>
+                                        </div>
+                                        <p>Lídr</p>
+                                    </div>
+                                </div>
+                                <p class="badge-journey">Začněte svou cestu k tomu, abyste se stali elitním AI strategem již dnes</p>
+                            </div>
+                            
+                            <div class="cta-button-container">
+                                <a href="#cta" class="btn btn-primary btn-large glow-animation">Získej zdarma Prompty šité na míru tvému úspěchu</a>
+                                <div class="social-proof">
+                                    <div class="downloads-count"><i class="fas fa-download"></i> 500+ stažení</div>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(4.9/5)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-readiness-section" id="ai-readiness">
+        <div class="ai-readiness-container">
+            <div class="ai-readiness-content">
+                <h2>Objevte své AI Readiness skóre</h2>
+                <p>Absolvujte naše 2minutové hodnocení a zjistěte, jak je vaše poradenská praxe připravena na integraci AI.</p>
+                
+                <ul class="ai-readiness-benefits">
+                    <li><i class="fas fa-check-circle"></i> Personalizovaná zpráva o připravenosti na AI</li>
+                    <li><i class="fas fa-check-circle"></i> Vlastní plán implementace</li>
+                    <li><i class="fas fa-check-circle"></i> Prioritní přístup k omezeným místům na workshopech</li>
+                </ul>
+                
+                <a href="#assessment" class="ai-readiness-button">Začít hodnocení</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="workshops" id="workshops">
+        <div class="container">
+            <div class="section-header">
+                <h2>Workshopy a firemní balíčky</h2>
+                <p>AI školicí řešení na míru pro váš tým</p>
+            </div>
+            
+            <div class="workshop-cards-container">
+                <div class="workshop-card">
+                    <div class="workshop-card-header">
+                        <div class="workshop-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Týmové workshopy</h3>
+                    </div>
+                    <div class="workshop-card-content">
+                        <div class="workshop-highlights">
+                            <div class="workshop-price-tag">
+                                <span class="price">1250 Kč</span>
+                                <span class="price-details">za osobu</span>
+                            </div>
+                            <div class="workshop-duration">
+                                <i class="far fa-clock"></i> 1-denní intenzivní školení
+                            </div>
+                        </div>
+                        <ul class="workshop-features">
+                            <li><i class="fas fa-check"></i> Přizpůsobeno vašemu odvětví</li>
+                            <li><i class="fas fa-check"></i> Intenzivní praktický trénink</li>
+                            <li><i class="fas fa-check"></i> Praktické případové studie</li>
+                            <li><i class="fas fa-check"></i> Materiály a zdroje k workshopu</li>
+                        </ul>
+                        <div class="workshop-capacity">
+                            <i class="fas fa-users"></i> Ideální pro týmy o 15-20 lidech
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="workshop-card featured">
+                    <div class="workshop-card-header">
+                        <div class="workshop-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Podnikový balíček</h3>
+                        <div class="featured-tag">Nejoblíbenější</div>
+                    </div>
+                    <div class="workshop-card-content">
+                        <div class="workshop-highlights">
+                            <div class="workshop-price-tag">
+                                <span class="price">Individuální</span>
+                                <span class="price-details">dle potřeb</span>
+                            </div>
+                            <div class="workshop-duration">
+                                <i class="far fa-calendar-alt"></i> Vícedenní program
+                            </div>
+                        </div>
+                        <ul class="workshop-features">
+                            <li><i class="fas fa-check"></i> Komplexní AI strategie</li>
+                            <li><i class="fas fa-check"></i> Školení pro jednotlivá oddělení</li>
+                            <li><i class="fas fa-check"></i> Implementační plán na míru</li>
+                            <li><i class="fas fa-check"></i> Průběžná podpora</li>
+                        </ul>
+                        <div class="workshop-capacity">
+                            <i class="fas fa-building"></i> Pro celé organizace
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="workshop-cta-container">
+                <div class="workshop-cta-content">
+                    <h3>Nejste si jisti, která možnost je pro vás ta pravá?</h3>
+                    <p>Získejte personalizované doporučení na základě potřeb a cílů vaší společnosti.</p>
+                </div>
+                <a href="#assessment" class="btn btn-primary btn-large workshop-cta-btn">Požádat o bezplatné firemní hodnocení</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Seznamte se s hlavními řečníky kurzu</h2>
+                <p>Učte se od odborníků z oboru, kteří zvládli implementaci AI ve finančním poradenství</p>
+            </div>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/alexandra-korman.jpg" alt="Alexandra Korman - AI Stratég a lídr v oblasti obchodních inovací" onerror="this.src='images/alexandra-korman-linkedin.jpg'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Alexandra Korman</h3>
+                        <p class="speaker-title">AI Stratég a lídr v oblasti obchodních inovací</p>
+                        <p class="speaker-bio">Obchodní výkonná vedoucí s globálními zkušenostmi. Podporuje růst podnikání prostřednictvím AI, inovativní strategie a řešení zaměřených na zákazníka.</p>
+                        <a href="https://www.linkedin.com/in/alexandrakorman/" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn profil</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/ladislav-bohuniczky.jpg" alt="Ladislav Bohuniczky - AI Transformační konzultant" onerror="this.src='images/ladislav-bohuniczky-linkedin.jpg'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Ladislav Bohuniczky</h3>
+                        <p class="speaker-title">AI Transformační konzultant</p>
+                        <p class="speaker-bio">Podporuje růst společností pomocí AI a inovací. Vybavuje poradce k modernizaci, transformaci praxe a zlepšení výsledků pomocí silnějších datových poznatků.</p>
+                        <a href="https://www.linkedin.com/in/ladislav-bohuniczky/" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn profil</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/antoine-saint-dupre.jpg" alt="Antoine Saint-Dupré - Senior expert na integraci AI a blockchainu" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Antoine Saint-Dupré</h3>
+                        <p class="speaker-title">Senior expert na integraci AI a blockchainu</p>
+                        <p class="speaker-bio">Propojuje AI a blockchain k vytváření bezpečných, inteligentních systémů. Provází digitální inovace ve financích prostřednictvím decentralizovaných modelů a strojového učení.</p>
+                        <a href="#" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn profil</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/sofia-mei-chen.png" alt="Sofia Mei Chen - Strategička marketingu a růstu komunit" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Sofia Mei Chen</h3>
+                        <p class="speaker-title">Strateg pro marketing a růst komunity</p>
+                        <p class="speaker-bio">Kreativní marketingová odborníce, která propojuje Východ a Západ, tradiční a digitální přístupy. Buduje aktivní komunity prostřednictvím sociálních médií, videa a digitálního storytellingu.</p>
+                        <a href="#" target="_blank" class="speaker-link"><i class="fab fa-linkedin"></i> LinkedIn profil</a>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/special-guest.jpg" alt="Speciální host" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Speciální host</h3>
+                        <span class="coming-soon">Bude oznámeno</span>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/special-guest1.jpg" alt="Speciální host" onerror="this.src='images/speaker-placeholder.png'; this.onerror=null;">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Speciální host</h3>
+                        <span class="coming-soon">Bude oznámeno</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vaše investice do budoucí excelence</h2>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Online kurz</h3>
+                        <div class="price">690 Kč</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Plný přístup ke všem materiálům kurzu</li>
+                            <li>Praktická cvičení a šablony</li>
+                            <li>Certifikát o absolvování</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary enroll-btn">Zapsat se nyní</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>1-denní workshop</h3>
+                        <div class="price">1 250 Kč <span>za osobu</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Intenzivní praktický trénink</li>
+                            <li>Personalizovaná zpětná vazba</li>
+                            <li>Síťování s kolegy</li>
+                            <li>Materiály a zdroje workshopu</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary enroll-btn" data-course-name="1-denní workshop">Požádat o workshop</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Firemní plány na míru</h3>
+                        <div class="price">Kontaktujte nás</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Přizpůsobeno potřebám vaší společnosti</li>
+                            <li>Možnosti na místě nebo vzdáleně</li>
+                            <li>Komplexní implementační plán</li>
+                            <li>Průběžná podpora a konzultace</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary enroll-btn" data-course-name="Firemní plán">Kontaktujte nás</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-bonus">
+                <h3>Volitelné výhody</h3>
+                <ul>
+                    <li>Bezplatný 14denní přístup do VIP knihovny zdrojů</li>
+                    <li>Množstevní slevy pro kurz a workshop</li>
+                    <li>VIP přístup: První získáte nové AI šablony a odborné webináře</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Co říkají čeští poradci</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"NextAI mi pomohl získat větší klienty tím, že jsem ukázal, že jsem napřed."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Tomáš, Finanční konzultant, Brno</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"S certifikací NextAI mi klienti důvěřují v mé odbornosti v oblasti AI a vidí skutečné výsledky."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Jana, Nezávislý poradce, Praha</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Připojil jsem se kvůli nástrojům, ale zůstal jsem kvůli komunitě. Je to nejlepší investice do mé kariéry."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Pavel, Správce majetku, Ostrava</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Workshopy mi daly jasnost a sebevědomí vést s AI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Martina, Finanční poradkyně, Olomouc</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Má profesionální síť mě nyní vidí jako líra v oblasti AI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Radek, Obchodní kouč, Olomouc</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Workshopy mi daly jasnost a sebevědomí vést s AI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>— Barbora, Konzultační partnerka, Plzeň</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots"></div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Kontaktujte nás</h2>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:support@nextai.cz">support@nextai.cz</a></li>
+                        <li><i class="fas fa-phone"></i> Telefon: <a href="tel:+420123456789">+420 123 456 789</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Pošlete nám zprávu</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Jméno</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Zpráva</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="assessment-modal" id="assessment">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Požádat o bezplatné firemní AI hodnocení</h2>
+            <form id="assessmentForm">
+                <div class="form-group">
+                    <label for="companyName">Název společnosti</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactName">Kontaktní osoba</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamSize">Velikost týmu</label>
+                    <select id="teamSize" name="teamSize" required>
+                        <option value="">Vyberte velikost týmu</option>
+                        <option value="1-5">1-5 poradců</option>
+                        <option value="6-15">6-15 poradců</option>
+                        <option value="16-30">16-30 poradců</option>
+                        <option value="31+">31+ poradců</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Oblasti zájmu</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="client-communication"> Komunikace s klienty</label>
+                        <label><input type="checkbox" name="interests" value="time-management"> Time management</label>
+                        <label><input type="checkbox" name="interests" value="product-education"> Vzdělávání o produktech</label>
+                        <label><input type="checkbox" name="interests" value="prospecting"> Prospecting</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Požádat o hodnocení</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/nextai-logo-white-placeholder.png" alt="NextAI Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@nextai.cz">info@nextai.cz</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Sociální sítě</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Právní informace</h4>
+                        <ul>
+                            <li><a href="#">GDPR/Ochrana soukromí</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-form-footer">
+                        <h4>Kontaktujte nás</h4>
+                        <form id="footerContactForm">
+                            <input type="email" placeholder="Váš email" required>
+                            <textarea placeholder="Vaše zpráva" required></textarea>
+                            <button type="submit" class="btn btn-secondary">Odeslat</button>
+                        </form>
+                    </div>
+                    <div class="live-chat">
+                        <a href="#" class="chat-button"><i class="fas fa-comment"></i> Live Chat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextAI. Všechna práva vyhrazena.</p>
+                <p class="analytics-note">Google Analytics povoleno</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <!-- Script enrollment-popup.js je již načten v hlavičce -->
+</body>
+</html>

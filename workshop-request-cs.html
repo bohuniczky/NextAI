@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Požádat o Workshop | NextAI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/enroll.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index-cs.html">
+                        <img src="images/nextai-logo-placeholder.png" alt="NextAI Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index-cs.html">Domů</a></li>
+                        <li><a href="courses-cs.html">Kurzy</a></li>
+                        <li><a href="#">O nás</a></li>
+                        <li><a href="contact-cs.html">Kontakt</a></li>
+                        <li><a href="workshop-request.html" class="lang-switch">EN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Workshop Request Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Požádat o Vlastní Workshop</h2>
+                <p>Přineseme AI školení přímo do vaší organizace</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <div class="workshop-details">
+                        <h3>Proč zvolit vlastní workshop?</h3>
+                        <p>Naše workshopy jsou navrženy tak, aby řešily specifické potřeby a výzvy vaší organizace. Spolupracujeme s vámi na přizpůsobení obsahu, příkladů a cvičení, abychom maximalizovali relevanci a dopad pro váš tým.</p>
+                        
+                        <div class="workshop-benefits">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Obsah přizpůsobený vašemu odvětví a případům použití</li>
+                                <li><i class="fas fa-check-circle"></i> Flexibilní plánování podle dostupnosti vašeho týmu</li>
+                                <li><i class="fas fa-check-circle"></i> Možnost realizace na místě nebo virtuálně</li>
+                                <li><i class="fas fa-check-circle"></i> Praktická cvičení s vašimi vlastními daty (volitelné)</li>
+                                <li><i class="fas fa-check-circle"></i> Následná podpora a zdroje</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <form id="workshopForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="workshopCourse">Téma Workshopu*</label>
+                            <select id="workshopCourse" name="workshopCourse" required>
+                                <option value="">Vyberte téma</option>
+                                <option value="ai-fundamentals">Základy umělé inteligence</option>
+                                <option value="machine-learning">Základy strojového učení</option>
+                                <option value="deep-learning">Aplikace hlubokého učení</option>
+                                <option value="nlp">Zpracování přirozeného jazyka</option>
+                                <option value="computer-vision">Počítačové vidění</option>
+                                <option value="ai-strategy">AI strategie pro firmy</option>
+                                <option value="custom">Vlastní téma (upřesněte ve zprávě)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Jméno*</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Příjmení*</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mailová adresa*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefonní číslo*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Společnost/Organizace*</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="jobTitle">Pracovní pozice*</label>
+                            <input type="text" id="jobTitle" name="jobTitle" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="participants">Odhadovaný počet účastníků*</label>
+                                <input type="number" id="participants" name="participants" min="1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="duration">Preferovaná délka*</label>
+                                <select id="duration" name="duration" required>
+                                    <option value="">Vyberte délku</option>
+                                    <option value="half-day">Půldenní (4 hodiny)</option>
+                                    <option value="full-day">Celodenní (8 hodin)</option>
+                                    <option value="two-day">Dvoudenní workshop</option>
+                                    <option value="custom">Vlastní délka</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferované datum (pokud máte)</label>
+                                <input type="date" id="preferredDate" name="preferredDate">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location">Preferované místo*</label>
+                                <select id="location" name="location" required>
+                                    <option value="">Vyberte místo</option>
+                                    <option value="onsite">Na místě ve vaší lokaci</option>
+                                    <option value="nextai">V tréninkovém centru NextAI</option>
+                                    <option value="virtual">Virtuálně/Online</option>
+                                    <option value="hybrid">Hybridně (osobně i virtuálně)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Další požadavky nebo otázky*</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Sdělte nám prosím jakákoli specifická témata, cíle nebo otázky, které máte ohledně workshopu..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Přihlásit se k odběru novinek o AI školeních</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Souhlasím s <a href="#">Obchodními podmínkami</a> a <a href="#">Zásadami ochrany osobních údajů</a>*</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-full">Odeslat žádost o workshop</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-sidebar">
+                    <div class="contact-info">
+                        <h3>Informace o workshopech</h3>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Velikost skupiny</h4>
+                                <p>Pro optimální vzdělávací zážitek doporučujeme 5-20 účastníků na workshop</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-laptop"></i>
+                            <div>
+                                <h4>Technické požadavky</h4>
+                                <p>Účastníci budou potřebovat notebooky s přístupem k internetu. Další požadavky budou poskytnuty podle tématu workshopu.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Plánování</h4>
+                                <p>Workshopy jsou obvykle plánovány 3-4 týdny předem, aby byl čas na přizpůsobení.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-hours">
+                        <h3>Máte otázky?</h3>
+                        <p>Náš tým je připraven pomoci vám naplánovat perfektní workshop pro vaši organizaci.</p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:workshops@nextai.com">workshops@nextai.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Žádost o workshop odeslána!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Děkujeme za váš zájem o vlastní workshop NextAI. Obdrželi jsme vaši žádost a budeme vás kontaktovat do 2 pracovních dnů, abychom projednali detaily a další kroky.</p>
+                <p>Pokud máte naléhavé dotazy, kontaktujte prosím náš tým workshopů přímo na <a href="mailto:workshops@nextai.com">workshops@nextai.com</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="modalClose" class="btn btn-primary">Zavřít</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigace</h4>
+                        <ul>
+                            <li><a href="index-cs.html">Domů</a></li>
+                            <li><a href="courses-cs.html">Kurzy</a></li>
+                            <li><a href="#">O nás</a></li>
+                            <li><a href="contact-cs.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kurzy</h4>
+                        <ul>
+                            <li><a href="courses-cs.html#popular-courses">Pro začátečníky</a></li>
+                            <li><a href="courses-cs.html#advanced-courses">Pro pokročilé</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a href="mailto:info@nextai.com">info@nextai.com</a></li>
+                            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextAI. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
